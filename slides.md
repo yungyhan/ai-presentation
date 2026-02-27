@@ -5,20 +5,24 @@ colorSchema: dark
 transition: slide-left
 drawings:
   persist: false
-background: /bg-fabric.jpg
 ---
+
+<div class="flex items-center justify-center h-full gap-12">
+<div>
 
 # How to Get More Out of AI
 
 ## (As a Human)
 
----
-background: /bg-grid.jpg
+</div>
+<img src="/slide-01-title.png" class="h-64 rounded-lg shadow-xl" />
+</div>
+
 ---
 
 # The Two Types of Work
 
-<div class="grid grid-cols-2 gap-12 mt-8">
+<div class="grid grid-cols-3 gap-8 mt-4">
 <div>
 
 ### High Touch
@@ -39,6 +43,9 @@ background: /bg-grid.jpg
 - Variable names, frontend copy, etc.
 
 </div>
+<div class="flex items-center justify-center">
+<img src="/slide-02-two-types.png" class="h-52 rounded-lg shadow-xl" />
+</div>
 </div>
 
 <!--
@@ -46,10 +53,11 @@ When you're working with AI, not all tasks are created equal. Some need you clos
 -->
 
 ---
-background: /bg-lines.jpg
----
 
 # High Touch — Indicators
+
+<div class="grid grid-cols-3 gap-8">
+<div class="col-span-2">
 
 <v-clicks>
 
@@ -63,15 +71,22 @@ background: /bg-lines.jpg
 
 </v-clicks>
 
+</div>
+<div class="flex items-center justify-center">
+<img src="/slide-03-high-touch.png" class="h-52 rounded-lg shadow-xl" />
+</div>
+</div>
+
 <!--
 These are the signals that a task will need your close attention. The AI will struggle with ambiguity, mixed patterns, and complicated flows — so you need to be there to guide it.
 -->
 
 ---
-background: /bg-fabric.jpg
----
 
 # Low Touch — Indicators
+
+<div class="grid grid-cols-3 gap-8">
+<div class="col-span-2">
 
 <v-clicks>
 
@@ -82,28 +97,36 @@ background: /bg-fabric.jpg
 
 </v-clicks>
 
+</div>
+<div class="flex items-center justify-center">
+<img src="/slide-04-low-touch.png" class="h-52 rounded-lg shadow-xl" />
+</div>
+</div>
+
 <!--
 These are the tasks where AI shines with minimal guidance. Strong patterns and clear examples mean the AI can often get it right on the first try.
 -->
 
 ---
-background: /bg-wave.jpg
----
 
 # The Bottleneck
 
-<div class="mt-12 text-center">
+<div class="grid grid-cols-3 gap-8 mt-4">
+<div class="col-span-2 flex flex-col justify-center">
 
 Each high-touch task demands your **cognitive attention** —
-
 reviewing, iterating, course-correcting.
 
-<div class="text-3xl mt-8 font-bold">
+<div class="text-2xl mt-6 font-bold">
 
-You can only run so many in parallel<br>before getting overwhelmed.
+You can only run so many in parallel before getting overwhelmed.
 
 </div>
 
+</div>
+<div class="flex items-center justify-center">
+<img src="/slide-05-bottleneck.png" class="h-52 rounded-lg shadow-xl" />
+</div>
 </div>
 
 <!--
@@ -111,17 +134,22 @@ This is the key insight. Even if AI is doing the coding, high-touch tasks still 
 -->
 
 ---
-layout: center
-background: /bg-grid.jpg
----
+
+<div class="flex items-center justify-center h-full gap-12">
+<img src="/slide-06-transition.png" class="h-52 rounded-lg shadow-xl" />
+<div>
 
 # So how do we move tasks<br>from high to low touch?
 
----
-background: /bg-lines.jpg
+</div>
+</div>
+
 ---
 
 # Approach 1: Skills via Human Iteration
+
+<div class="grid grid-cols-3 gap-8">
+<div class="col-span-2">
 
 <v-clicks>
 
@@ -133,7 +161,7 @@ background: /bg-lines.jpg
 
 </v-clicks>
 
-<div v-click class="mt-6 p-4 border border-gray-600 rounded">
+<div v-click class="mt-4 p-4 border border-gray-600 rounded">
 
 **Example:** Feature toggle skill
 
@@ -141,19 +169,26 @@ background: /bg-lines.jpg
 
 </div>
 
+</div>
+<div class="flex items-center justify-center">
+<img src="/slide-07-approach1.png" class="h-52 rounded-lg shadow-xl" />
+</div>
+</div>
+
 <!--
 This is the most manual approach. You're essentially pair-programming with the AI to build a reusable skill. It's slow and expensive, but you end up with something that other engineers can use too.
 -->
 
 ---
-background: /bg-fabric.jpg
----
 
 # Approach 2: Skills via AI Iteration with Exemplar
 
+<div class="grid grid-cols-3 gap-8">
+<div class="col-span-2">
+
 Give the AI an **exemplar endpoint** to learn from.
 
-<div class="mt-8 text-xl italic text-gray-400">
+<div class="mt-6 text-xl italic text-gray-400">
 
 "AI cheated by checking the answers"
 
@@ -167,19 +202,26 @@ Give the AI an **exemplar endpoint** to learn from.
 
 </v-clicks>
 
+</div>
+<div class="flex items-center justify-center">
+<img src="/slide-08-approach2.png" class="h-52 rounded-lg shadow-xl" />
+</div>
+</div>
+
 <!--
 Instead of you being in the feedback loop, the AI can compare its own output against a working example. It's like giving a student the answer key — they can check their own work. This dramatically speeds up the iteration cycle.
 -->
 
 ---
-background: /bg-wave.jpg
----
 
 # Approach 3: Copy Exemplar PRs
 
+<div class="grid grid-cols-3 gap-8">
+<div class="col-span-2">
+
 The simplest approach.
 
-<div class="text-2xl mt-8 mb-8">
+<div class="text-2xl mt-6 mb-6">
 
 Point at a PR and say **"do this again for X."**
 
@@ -193,15 +235,22 @@ Point at a PR and say **"do this again for X."**
 
 </v-clicks>
 
+</div>
+<div class="flex items-center justify-center">
+<img src="/slide-09-approach3.png" class="h-52 rounded-lg shadow-xl" />
+</div>
+</div>
+
 <!--
 Sometimes you don't need a skill. If there's a good PR that does what you want, just tell the AI to replicate it. No abstraction needed. This is the pragmatic choice for tasks you won't repeat often.
 -->
 
 ---
-background: /bg-grid.jpg
----
 
 # Approach 4: Strong Patterns (Long-term)
+
+<div class="grid grid-cols-3 gap-8">
+<div class="col-span-2">
 
 Services drift over time as we develop better ideas.
 
@@ -213,10 +262,16 @@ Do it incrementally — like library upgrades,<br>the longer you leave it the mo
 
 </v-clicks>
 
-<div v-click class="mt-8 text-gray-400 italic">
+<div v-click class="mt-6 text-gray-400 italic">
 
 Unverified, but promising.
 
+</div>
+
+</div>
+<div class="flex items-center justify-center">
+<img src="/slide-10-approach4.png" class="h-52 rounded-lg shadow-xl" />
+</div>
 </div>
 
 <!--
@@ -224,12 +279,13 @@ This is the long-term vision. Historically, we've accepted that services will ha
 -->
 
 ---
-background: /bg-lines.jpg
----
 
 # What This Unlocks
 
-<div class="grid grid-cols-2 gap-12 mt-8">
+<div class="grid grid-cols-3 gap-8 mt-4">
+<div class="col-span-2">
+
+<div class="grid grid-cols-2 gap-8">
 <div>
 
 ### Stream 1: High Touch
@@ -248,10 +304,16 @@ Multiple tasks in flight — check in when PRs are ready.
 </div>
 </div>
 
-<div v-click class="mt-8 p-4 border border-gray-600 rounded text-center">
+<div v-click class="mt-6 p-4 border border-gray-600 rounded text-center">
 
 Speculative work becomes viable — things that aren't needed *right now* but might be needed in the future.
 
+</div>
+
+</div>
+<div class="flex items-center justify-center">
+<img src="/slide-11-unlocks.png" class="h-52 rounded-lg shadow-xl" />
+</div>
 </div>
 
 <!--
@@ -259,10 +321,11 @@ With enough low-touch tasks, you can maintain two permanent streams of work. You
 -->
 
 ---
-background: /bg-fabric.jpg
----
 
 # Bonus Tips
+
+<div class="grid grid-cols-3 gap-8">
+<div class="col-span-2">
 
 <v-clicks>
 
@@ -275,13 +338,21 @@ background: /bg-fabric.jpg
 
 </v-clicks>
 
+</div>
+<div class="flex items-center justify-center">
+<img src="/slide-12-tips.png" class="h-52 rounded-lg shadow-xl" />
+</div>
+</div>
+
 <!--
 A couple of practical tips. Timing matters — you want the AI working while you're away, but make sure it's past the initial back-and-forth phase first. And sometimes the right answer is to not use AI at all. If you can do something in 5 minutes, the overhead of prompting and reviewing isn't worth it.
 -->
 
 ---
-layout: center
-background: /bg-wave.jpg
----
+
+<div class="flex items-center justify-center h-full gap-12">
+<img src="/slide-13-questions.png" class="h-52 rounded-lg shadow-xl" />
 
 # Questions?
+
+</div>
