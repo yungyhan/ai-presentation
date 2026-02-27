@@ -5,12 +5,15 @@ colorSchema: dark
 transition: slide-left
 drawings:
   persist: false
+background: /bg-fabric.jpg
 ---
 
 # How to Get More Out of AI
 
 ## (As a Human)
 
+---
+background: /bg-grid.jpg
 ---
 
 # The Two Types of Work
@@ -43,6 +46,8 @@ When you're working with AI, not all tasks are created equal. Some need you clos
 -->
 
 ---
+background: /bg-lines.jpg
+---
 
 # High Touch — Indicators
 
@@ -63,6 +68,8 @@ These are the signals that a task will need your close attention. The AI will st
 -->
 
 ---
+background: /bg-fabric.jpg
+---
 
 # Low Touch — Indicators
 
@@ -80,25 +87,23 @@ These are the tasks where AI shines with minimal guidance. Strong patterns and c
 -->
 
 ---
+background: /bg-wave.jpg
+---
 
 # The Bottleneck
 
-<div class="grid grid-cols-2 gap-8 mt-4">
-<div class="flex flex-col justify-center">
+<div class="mt-12 text-center">
 
 Each high-touch task demands your **cognitive attention** —
+
 reviewing, iterating, course-correcting.
 
-<div class="text-2xl mt-6 font-bold">
+<div class="text-3xl mt-8 font-bold">
 
-You can only run so many in parallel before getting overwhelmed.
-
-</div>
+You can only run so many in parallel<br>before getting overwhelmed.
 
 </div>
-<div class="flex justify-center">
-<img src="/this-is-fine.jpg" class="h-72 rounded shadow" />
-</div>
+
 </div>
 
 <!--
@@ -107,10 +112,13 @@ This is the key insight. Even if AI is doing the coding, high-touch tasks still 
 
 ---
 layout: center
+background: /bg-grid.jpg
 ---
 
 # So how do we move tasks<br>from high to low touch?
 
+---
+background: /bg-lines.jpg
 ---
 
 # Approach 1: Skills via Human Iteration
@@ -138,6 +146,8 @@ This is the most manual approach. You're essentially pair-programming with the A
 -->
 
 ---
+background: /bg-fabric.jpg
+---
 
 # Approach 2: Skills via AI Iteration with Exemplar
 
@@ -162,15 +172,14 @@ Instead of you being in the feedback loop, the AI can compare its own output aga
 -->
 
 ---
+background: /bg-wave.jpg
+---
 
 # Approach 3: Copy Exemplar PRs
 
-<div class="grid grid-cols-5 gap-8">
-<div class="col-span-3">
-
 The simplest approach.
 
-<div class="text-2xl mt-6 mb-6">
+<div class="text-2xl mt-8 mb-8">
 
 Point at a PR and say **"do this again for X."**
 
@@ -184,16 +193,12 @@ Point at a PR and say **"do this again for X."**
 
 </v-clicks>
 
-</div>
-<div class="col-span-2 flex items-center justify-center">
-<img src="/spiderman-pointing.jpg" class="rounded shadow" />
-</div>
-</div>
-
 <!--
 Sometimes you don't need a skill. If there's a good PR that does what you want, just tell the AI to replicate it. No abstraction needed. This is the pragmatic choice for tasks you won't repeat often.
 -->
 
+---
+background: /bg-grid.jpg
 ---
 
 # Approach 4: Strong Patterns (Long-term)
@@ -218,6 +223,8 @@ Unverified, but promising.
 This is the long-term vision. Historically, we've accepted that services will have inconsistent patterns because the cost of alignment was too high. AI changes that equation. If we keep patterns strong and consistent, almost everything becomes low-touch.
 -->
 
+---
+background: /bg-lines.jpg
 ---
 
 # What This Unlocks
@@ -252,11 +259,10 @@ With enough low-touch tasks, you can maintain two permanent streams of work. You
 -->
 
 ---
+background: /bg-fabric.jpg
+---
 
 # Bonus Tips
-
-<div class="grid grid-cols-5 gap-8">
-<div class="col-span-3">
 
 <v-clicks>
 
@@ -269,18 +275,13 @@ With enough low-touch tasks, you can maintain two permanent streams of work. You
 
 </v-clicks>
 
-</div>
-<div class="col-span-2 flex items-center justify-center">
-<img src="/is-this-a-pigeon.jpg" class="rounded shadow" />
-</div>
-</div>
-
 <!--
 A couple of practical tips. Timing matters — you want the AI working while you're away, but make sure it's past the initial back-and-forth phase first. And sometimes the right answer is to not use AI at all. If you can do something in 5 minutes, the overhead of prompting and reviewing isn't worth it.
 -->
 
 ---
 layout: center
+background: /bg-wave.jpg
 ---
 
 # Questions?
