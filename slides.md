@@ -83,18 +83,22 @@ These are the tasks where AI shines with minimal guidance. Strong patterns and c
 
 # The Bottleneck
 
-<div class="mt-12 text-center">
+<div class="grid grid-cols-2 gap-8 mt-4">
+<div class="flex flex-col justify-center">
 
 Each high-touch task demands your **cognitive attention** —
-
 reviewing, iterating, course-correcting.
 
-<div class="text-3xl mt-8 font-bold">
+<div class="text-2xl mt-6 font-bold">
 
-You can only run so many in parallel<br>before getting overwhelmed.
+You can only run so many in parallel before getting overwhelmed.
 
 </div>
 
+</div>
+<div class="flex justify-center">
+<img src="/this-is-fine.jpg" class="h-72 rounded shadow" />
+</div>
 </div>
 
 <!--
@@ -161,9 +165,12 @@ Instead of you being in the feedback loop, the AI can compare its own output aga
 
 # Approach 3: Copy Exemplar PRs
 
+<div class="grid grid-cols-5 gap-8">
+<div class="col-span-3">
+
 The simplest approach.
 
-<div class="text-2xl mt-8 mb-8">
+<div class="text-2xl mt-6 mb-6">
 
 Point at a PR and say **"do this again for X."**
 
@@ -176,6 +183,12 @@ Point at a PR and say **"do this again for X."**
 - Works surprisingly well when patterns are clear
 
 </v-clicks>
+
+</div>
+<div class="col-span-2 flex items-center justify-center">
+<img src="/spiderman-pointing.jpg" class="rounded shadow" />
+</div>
+</div>
 
 <!--
 Sometimes you don't need a skill. If there's a good PR that does what you want, just tell the AI to replicate it. No abstraction needed. This is the pragmatic choice for tasks you won't repeat often.
@@ -242,6 +255,9 @@ With enough low-touch tasks, you can maintain two permanent streams of work. You
 
 # Bonus Tips
 
+<div class="grid grid-cols-5 gap-8">
+<div class="col-span-3">
+
 <v-clicks>
 
 - **Time your prompts around breaks**
@@ -252,6 +268,12 @@ With enough low-touch tasks, you can maintain two permanent streams of work. You
   - Know when it's faster to just do it yourself
 
 </v-clicks>
+
+</div>
+<div class="col-span-2 flex items-center justify-center">
+<img src="/is-this-a-pigeon.jpg" class="rounded shadow" />
+</div>
+</div>
 
 <!--
 A couple of practical tips. Timing matters — you want the AI working while you're away, but make sure it's past the initial back-and-forth phase first. And sometimes the right answer is to not use AI at all. If you can do something in 5 minutes, the overhead of prompting and reviewing isn't worth it.
