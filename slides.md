@@ -10,7 +10,7 @@ drawings:
 <div class="flex items-center justify-center h-full gap-12">
 <div>
 
-# How to Get More Out of AI
+# Getting more out of AI
 
 ## (As a Human)
 
@@ -20,29 +20,50 @@ drawings:
 
 ---
 
-# The Two Types of Work
+<div class="flex items-center justify-center h-full gap-12">
+<div>
+
+# Q: What is the efficiency/speed gain that AI has given you?
+
+<v-clicks>
+
+- **Not an order of magnitude** — I'm now operating 1.5-2x
+
+</v-clicks>
+</div>
+</div>
+
+---
+
+# The Two Buckets
 
 <div class="grid grid-cols-3 gap-8 mt-4">
+
+<v-clicks>
 <div>
 
 ### High Touch
-*Needs your attention*
+
+_Needs your attention_
 
 - Lots of comments & feedback expected
 - Requires iteration after AI's first attempt
 - Might just be garbage
 
 </div>
+
 <div>
 
 ### Low Touch
-*Set and forget*
+
+_Set and forget_
 
 - Likely to get LGTM straight away
 - Minor feedback only
-- Variable names, frontend copy, etc.
 
 </div>
+</v-clicks>
+
 <div class="flex items-center justify-center">
 <img src="/slide-02-two-types.png" class="h-52 rounded-lg shadow-xl" />
 </div>
@@ -58,6 +79,8 @@ When you're working with AI, not all tasks are created equal. Some need you clos
 
 <div class="grid grid-cols-3 gap-8">
 <div class="col-span-2">
+
+Q: What tips you off that something will be high touch?
 
 <v-clicks>
 
@@ -94,6 +117,7 @@ These are the signals that a task will need your close attention. The AI will st
 - **Very strong patterns** — or good examples to copy
 - **Library upgrades**
 - **Repetitive work** — same shape, different names
+- **Very simple** - Frontend copy, etc.\*
 
 </v-clicks>
 
@@ -117,11 +141,20 @@ These are the tasks where AI shines with minimal guidance. Strong patterns and c
 Each high-touch task demands your **cognitive attention** —
 reviewing, iterating, course-correcting.
 
+<v-clicks>
+Q: How many in-flight high-touch tasks can you manage?
+</v-clicks>
+
 <div class="text-2xl mt-6 font-bold">
 
-You can only run so many in parallel before getting overwhelmed.
-
 </div>
+
+<v-clicks>
+<span>You can only run so many in parallel before getting overwhelmed.</span>
+
+- <span class="takeaway">Takeaway 1: Be mindful of how many high-touch tasks you can handle, and don't overload yourself</span>
+
+</v-clicks>
 
 </div>
 <div class="flex items-center justify-center">
@@ -132,17 +165,6 @@ You can only run so many in parallel before getting overwhelmed.
 <!--
 This is the key insight. Even if AI is doing the coding, high-touch tasks still consume your mental bandwidth. You're the bottleneck, not the AI. So the question becomes: how do we move tasks from high-touch to low-touch?
 -->
-
----
-
-<div class="flex items-center justify-center h-full gap-12">
-<img src="/slide-06-transition.png" class="h-52 rounded-lg shadow-xl" />
-<div>
-
-# So how do we move tasks<br>from high to low touch?
-
-</div>
-</div>
 
 ---
 
@@ -165,7 +187,7 @@ This is the key insight. Even if AI is doing the coding, high-touch tasks still 
 
 **Example:** Feature toggle skill
 
-**Trade-off:** Burns lots of tokens, slow cycle time — but it works.
+**Evaluation:** Burns lots of tokens, slow cycle time — but it works.
 
 </div>
 
@@ -190,8 +212,6 @@ Give the AI an **exemplar endpoint** to learn from.
 
 <div class="mt-6 text-xl italic text-gray-400">
 
-"AI cheated by checking the answers"
-
 </div>
 
 <v-clicks>
@@ -201,6 +221,14 @@ Give the AI an **exemplar endpoint** to learn from.
 - Self-corrects without your involvement
 
 </v-clicks>
+
+<div v-click class="mt-4 p-4 border border-gray-600 rounded">
+
+**Example:** Data loader skill
+
+**Evaluation:** AI cheated by looking at the answers, did not understand the **why**, eg consumer vs other schemas
+
+</div>
 
 </div>
 <div class="flex items-center justify-center">
@@ -247,39 +275,6 @@ Sometimes you don't need a skill. If there's a good PR that does what you want, 
 
 ---
 
-# Approach 4: Strong Patterns (Long-term)
-
-<div class="grid grid-cols-3 gap-8">
-<div class="col-span-2">
-
-Services drift over time as we develop better ideas.
-
-<v-clicks>
-
-With AI, it's no longer unreasonable to **bring entire services in line with new patterns**.
-
-Do it incrementally — like library upgrades,<br>the longer you leave it the more painful it gets.
-
-</v-clicks>
-
-<div v-click class="mt-6 text-gray-400 italic">
-
-Unverified, but promising.
-
-</div>
-
-</div>
-<div class="flex items-center justify-center">
-<img src="/slide-10-approach4.png" class="h-52 rounded-lg shadow-xl" />
-</div>
-</div>
-
-<!--
-This is the long-term vision. Historically, we've accepted that services will have inconsistent patterns because the cost of alignment was too high. AI changes that equation. If we keep patterns strong and consistent, almost everything becomes low-touch.
--->
-
----
-
 # What This Unlocks
 
 <div class="grid grid-cols-3 gap-8 mt-4">
@@ -289,6 +284,7 @@ This is the long-term vision. Historically, we've accepted that services will ha
 <div>
 
 ### Stream 1: High Touch
+
 Your focused attention.
 
 One task at a time, guiding AI through complexity.
@@ -297,16 +293,21 @@ One task at a time, guiding AI through complexity.
 <div>
 
 ### Stream 2: Low Touch
+
 AI works, you review.
 
 Multiple tasks in flight — check in when PRs are ready.
+
+Ideally a thing that will churn for a long time.
 
 </div>
 </div>
 
 <div v-click class="mt-6 p-4 border border-gray-600 rounded text-center">
 
-Speculative work becomes viable — things that aren't needed *right now* but might be needed in the future.
+Speculative work becomes viable — things that aren't needed _right now_ but might be needed in the future.
+
+**Example:** Relation entity sync skill
 
 </div>
 
@@ -330,11 +331,10 @@ With enough low-touch tasks, you can maintain two permanent streams of work. You
 <v-clicks>
 
 - **Time your prompts around breaks**
-  - Fire one off before lunch, before EOD
-  - The implementation phase takes the longest (comes after brainstorming check-ins)
-  - Don't fire the *initial* prompt before a break — it'll barely have started when you get back
+  - Fire one off before lunch, before coffee etc
+  - Don't fire the _initial_ prompt before a break — it'll barely have started when you get back
 - **Don't always use AI**
-  - Know when it's faster to just do it yourself
+  - Know when it's faster to just do it yourself (eg frontend copy)
 
 </v-clicks>
 
